@@ -16,18 +16,13 @@ export default defineConfig({
       name: 'explorer_ui',
       filename: 'remoteEntry.js',
       exposes: {
-        './App': './src/App.vue',
+        './App': './src/boot.ts',
       },
       shared: ['vue'],
     })
   ],
   server: {
     port: 5175,
-  },
-  define: {
-    __VUE_OPTIONS_API__: true,
-    __VUE_PROD_DEVTOOLS__: false,
-    __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false,
   },
   resolve: {
     alias: {
