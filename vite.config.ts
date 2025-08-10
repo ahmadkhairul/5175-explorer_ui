@@ -13,7 +13,7 @@ export default defineConfig({
     vueJsx(),
     vueDevTools(),
     federation({
-      name: 'explorer_ui',
+      name: 'explorer',
       filename: 'remoteEntry.js',
       exposes: {
         './App': './src/boot.ts',
